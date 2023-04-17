@@ -3,7 +3,7 @@ let minutes =0;
 let hours = 0;
 
 let start = document.getElementById('start'); 
-let pause = document.getElementById('stop');
+let stop = document.getElementById('stop');
 let reset = document.getElementById('reset'); 
 let stopstatus = 0;
 
@@ -33,8 +33,8 @@ start.addEventListener('click', ()=>{
 });
 
 
-/* TO PAUSE THE TIMER */
-pause.addEventListener('click', ()=>{
+/* TO STOP THE TIMER */
+stop.addEventListener('click', ()=>{
     clearInterval(stopstatus);
 });
 
